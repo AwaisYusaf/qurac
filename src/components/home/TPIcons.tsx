@@ -151,7 +151,7 @@ function TPIcon4() {
       viewBox="0 0 30 31"
       fill="none"
     >
-      <g clip-path="url(#clip0_333_192)">
+      <g clipPath="url(#clip0_333_192)">
         <path
           d="M11 17.0203L16.1429 9.82031V14.6203H20L14.8571 21.8203V17.0203H11Z"
           stroke="url(#paint0_linear_333_192)"
