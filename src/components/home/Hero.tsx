@@ -123,7 +123,7 @@ function TokenPresalePanel() {
 function Hero({}: Props) {
   return (
     <section className="w-full relative flex flex-col">
-      <div className="bg-[url(/assets/hero-gradient.png)] bg-no-repeat bg-center bg-cover w-full h-full absolute top-0 z-0">
+      <div className="bg-[url(/assets/hero-gradient.png)] bg- bg-no-repeat bg-center bg-cover w-full h-full absolute top-0 z-0">
         <Image
           src="/assets/hero-bg.png"
           alt="-"

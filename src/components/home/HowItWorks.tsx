@@ -1,24 +1,88 @@
 import React from "react";
 import SectionWrapper from "./SectionWrapper";
-import Image from "next/image";
+import {
+  HowItWorksIcon1,
+  HowItWorksIcon2,
+  HowItWorksIcon3,
+  HowItWorksIcon4,
+  HowItWorksIcon5,
+  HowItWorksIcon6,
+  HowItWorksIcon7,
+  HowItWorksIcon8,
+  HowItWorksIcon9,
+} from "./HowItWorkIcon";
 
 type Props = {};
 
-function HowItWorksIcon1({}: Props) {
+type CardProps = {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+};
+
+function Card({
+  content: { icon, title, description },
+}: {
+  content: CardProps;
+}) {
   return (
-    <svg
-      width={50}
-      height={50}
-      fill="#A66EE4"
-      aria-hidden="true"
-      className="e-font-icon-svg e-fas-network-wired text-purple-600"
-      viewBox="0 0 640 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"></path>
-    </svg>
+    <div className="flex flex-col items-center space-y-4">
+      {icon}
+      <p className="text-white text-center font-semibold text-lg">{title}</p>
+      <span className="text-center text-white/70 leading-8 w-[80%] mx-auto">
+        {description}
+      </span>
+    </div>
   );
 }
+
+const CARD_ITEMS: CardProps[] = [
+  {
+    title: "Decentralized Network Architecture",
+    description: `QURAC operates on a decentralized network, a web of interconnected nodes where each user serves as both a consumer and provider of internet services. This unique architecture eliminates the need for traditional internet service providers, giving you the power to shape your online experience.`,
+    icon: <HowItWorksIcon1 />,
+  },
+  {
+    title: "Token Incentives",
+    description: `Joining the decentralized revolution comes with perks. As you share your excess bandwidth with the network, you earn native utility tokens. These tokens not only represent your contribution but can be used within the ecosystem for purchasing additional services or exchanged for goods and services.`,
+    icon: <HowItWorksIcon2 />,
+  },
+  {
+    title: "Smart Contracts for Transparency",
+    description: `The backbone of QURAC lies in smart contracts – self-executing contracts with terms directly coded into the blockchain. These contracts automate various processes, from incentivizing users to validating transactions, ensuring transparency and security.`,
+    icon: <HowItWorksIcon3 />,
+  },
+  {
+    title: "Privacy and Security",
+    description: `Your privacy is paramount. Leveraging advanced blockchain technology, QURAC guarantees the security of your data and activities. Enjoy the internet without worrying about intrusive surveillance or data breaches.`,
+    icon: <HowItWorksIcon4 />,
+  },
+  {
+    title: "Quality of Service (QoS) Mechanisms",
+    description: `To enhance your internet experience, QURAC incorporates Quality of Service (QoS) mechanisms. Smart contracts facilitate agreements between users, prioritizing certain types of traffic and ensuring a reliable and efficient network.`,
+    icon: <HowItWorksIcon5 />,
+  },
+  {
+    title: "Governance by the Community",
+    description: `QURAC is more than just a network; it's a community-driven ecosystem. Participate in shaping the future through decentralized governance. Vote on network upgrades, propose changes, and actively contribute to the evolution of the platform.`,
+    icon: <HowItWorksIcon6 />,
+  },
+  {
+    title: "Seamless Integration",
+    description: `Transitioning to a decentralized network should be seamless.QURAC is designed to integrate seamlessly with existing internet infrastructure. Compatibility features ensure a smooth experience as you embark on this revolutionary journey.`,
+    icon: <HowItWorksIcon7 />,
+  },
+  {
+    title: "User-Friendly Interface",
+    description: `Navigating the decentralized landscape is made easy with our intuitive user interface. Whether on your desktop or mobile device, managing your contributions, exploring the network, and staying engaged with the community is just a click away.`,
+    icon: <HowItWorksIcon8 />,
+  },
+  {
+    title: "Ready to Join the Decentralized Revolution?",
+    description: `Now that you have a glimpse of how QURAC operates, it's time to experience decentralized connectivity firsthand. Sign up today, become an active participant, and be a part of reshaping the future of the internet. Connect with us and let's redefine connectivity together!`,
+    icon: <HowItWorksIcon9 />,
+  },
+];
 
 function HowItWorks({}: Props) {
   return (
@@ -37,129 +101,21 @@ function HowItWorks({}: Props) {
         </h2>
         <div className="flex flex-col divide-y-[1px] divide-gray-300/20">
           <div className="grid grid-cols-3 py-8">
-            <div className="flex flex-col items-center space-y-4">
-              <HowItWorksIcon1 />
-              <p className="text-white text-center font-semibold text-lg">
-                Decentralized Network Architecture
-              </p>
-              <span className="text-center text-white/70 leading-8 w-[80%] mx-auto">
-                QURAC operates on a decentralized network, a web of
-                interconnected nodes where each user serves as both a consumer
-                and provider of internet services. This unique architecture
-                eliminates the need for traditional internet service providers,
-                giving you the power to shape your online experience.
-              </span>
-            </div>
-            <div className="flex flex-col items-center space-y-4">
-              <HowItWorksIcon1 />
-              <p className="text-white text-center font-semibold text-lg">
-                Decentralized Network Architecture
-              </p>
-              <span className="text-center text-white/70 leading-8 w-[80%] mx-auto">
-                QURAC operates on a decentralized network, a web of
-                interconnected nodes where each user serves as both a consumer
-                and provider of internet services. This unique architecture
-                eliminates the need for traditional internet service providers,
-                giving you the power to shape your online experience.
-              </span>
-            </div>
-            <div className="flex flex-col items-center space-y-4">
-              <HowItWorksIcon1 />
-              <p className="text-white text-center font-semibold text-lg">
-                Decentralized Network Architecture
-              </p>
-              <span className="text-center text-white/70 leading-8 w-[80%] mx-auto">
-                QURAC operates on a decentralized network, a web of
-                interconnected nodes where each user serves as both a consumer
-                and provider of internet services. This unique architecture
-                eliminates the need for traditional internet service providers,
-                giving you the power to shape your online experience.
-              </span>
-            </div>
+            {CARD_ITEMS.slice(0, 3).map((content, index) => (
+              <Card content={content} key={index} />
+            ))}
           </div>
 
           <div className="grid grid-cols-3 py-8">
-            <div className="flex flex-col items-center space-y-4">
-              <HowItWorksIcon1 />
-              <p className="text-white text-center font-semibold text-lg">
-                Decentralized Network Architecture
-              </p>
-              <span className="text-center text-white/70 leading-8 w-[80%] mx-auto">
-                QURAC operates on a decentralized network, a web of
-                interconnected nodes where each user serves as both a consumer
-                and provider of internet services. This unique architecture
-                eliminates the need for traditional internet service providers,
-                giving you the power to shape your online experience.
-              </span>
-            </div>
-            <div className="flex flex-col items-center space-y-4">
-              <HowItWorksIcon1 />
-              <p className="text-white text-center font-semibold text-lg">
-                Decentralized Network Architecture
-              </p>
-              <span className="text-center text-white/70 leading-8 w-[80%] mx-auto">
-                QURAC operates on a decentralized network, a web of
-                interconnected nodes where each user serves as both a consumer
-                and provider of internet services. This unique architecture
-                eliminates the need for traditional internet service providers,
-                giving you the power to shape your online experience.
-              </span>
-            </div>
-            <div className="flex flex-col items-center space-y-4">
-              <HowItWorksIcon1 />
-              <p className="text-white text-center font-semibold text-lg">
-                Decentralized Network Architecture
-              </p>
-              <span className="text-center text-white/70 leading-8 w-[80%] mx-auto">
-                QURAC operates on a decentralized network, a web of
-                interconnected nodes where each user serves as both a consumer
-                and provider of internet services. This unique architecture
-                eliminates the need for traditional internet service providers,
-                giving you the power to shape your online experience.
-              </span>
-            </div>
+            {CARD_ITEMS.slice(3, 6).map((content, index) => (
+              <Card content={content} key={index} />
+            ))}
           </div>
 
           <div className="grid grid-cols-3 py-8">
-            <div className="flex flex-col items-center space-y-4">
-              <HowItWorksIcon1 />
-              <p className="text-white text-center font-semibold text-lg">
-                Decentralized Network Architecture
-              </p>
-              <span className="text-center text-white/70 leading-8 w-[80%] mx-auto">
-                QURAC operates on a decentralized network, a web of
-                interconnected nodes where each user serves as both a consumer
-                and provider of internet services. This unique architecture
-                eliminates the need for traditional internet service providers,
-                giving you the power to shape your online experience.
-              </span>
-            </div>
-            <div className="flex flex-col items-center space-y-4">
-              <HowItWorksIcon1 />
-              <p className="text-white text-center font-semibold text-lg">
-                Decentralized Network Architecture
-              </p>
-              <span className="text-center text-white/70 leading-8 w-[80%] mx-auto">
-                QURAC operates on a decentralized network, a web of
-                interconnected nodes where each user serves as both a consumer
-                and provider of internet services. This unique architecture
-                eliminates the need for traditional internet service providers,
-                giving you the power to shape your online experience.
-              </span>
-            </div>
-            <div className="flex flex-col items-center space-y-4">
-              <HowItWorksIcon1 />
-              <p className="text-white text-center font-semibold text-lg">
-                Decentralized Network Architecture
-              </p>
-              <span className="text-center text-white/70 leading-8 w-[80%] mx-auto">
-                QURAC operates on a decentralized network, a web of
-                interconnected nodes where each user serves as both a consumer
-                and provider of internet services. This unique architecture
-                eliminates the need for traditional internet service providers,
-                giving you the power to shape your online experience.
-              </span>
-            </div>
+            {CARD_ITEMS.slice(6, 9).map((content, index) => (
+              <Card content={content} key={index} />
+            ))}
           </div>
         </div>
       </SectionWrapper>
