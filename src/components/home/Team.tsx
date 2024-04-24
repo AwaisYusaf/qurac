@@ -77,7 +77,7 @@ const TEAM_DATA: TeamMember[] = [
 
 function Team({}: Props) {
   return (
-    <section className="w-full py-20 bg-[url(/assets/team-bg.jpg)] bg-no-repeat bg-center bg-cover">
+    <section className="w-full pt-20 pb-40 bg-[url(/assets/team-bg.jpg)] bg-no-repeat bg-center">
       <SectionWrapper>
         <h2 className="text-white font-semibold text-3xl text-center">
           The Team

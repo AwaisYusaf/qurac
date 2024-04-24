@@ -62,18 +62,18 @@ function TPIcon2() {
       <path
         d="M6 15.8203H5C4.44772 15.8203 4 15.3726 4 14.8203V11.8203C4 11.268 4.44772 10.8203 5 10.8203H25C25.5523 10.8203 26 11.268 26 11.8203V14.8203C26 15.3726 25.5523 15.8203 25 15.8203H24"
         stroke="#9F0CFE"
-        stroke-linecap="round"
+        strokeLinecap="round"
       ></path>
       <path
         d="M10 13.5283H9.45118C9.16432 13.5283 8.88855 13.6494 8.71108 13.8748C7.63938 15.2358 7 16.9532 7 18.82C7 23.2382 10.5817 26.82 15 26.82C19.4183 26.82 23 23.2382 23 18.82C23 16.9532 22.3606 15.2358 21.2889 13.8748C21.1114 13.6494 20.8357 13.5283 20.5488 13.5283H20"
         stroke="#DEF043"
-        stroke-linecap="round"
+        strokeLinecap="round"
       ></path>
       <path
         d="M12 19.8203L16 13.8203V17.8203H19L15 23.8203V19.8203H12Z"
         stroke="url(#paint0_linear_333_158)"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
       <defs>
         <linearGradient
@@ -103,33 +103,33 @@ function TPIcon3() {
       <path
         d="M2.30086 13.5842C2.3879 13.4217 2.55727 13.3203 2.7416 13.3203H27.2584C27.4427 13.3203 27.6121 13.4217 27.6991 13.5842L28.7706 15.5842C28.949 15.9173 28.7077 16.3203 28.3298 16.3203H1.67017C1.2923 16.3203 1.05099 15.9173 1.22943 15.5842L2.30086 13.5842Z"
         stroke="#9F0CFE"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
       <path
         d="M5.5 4.82031C5.5 4.54417 5.72386 4.32031 6 4.32031H10.7878C10.8577 4.32031 10.9269 4.33499 10.9909 4.36341L14.8908 6.09671C15.2786 6.26909 15.7214 6.26909 16.1092 6.09671L20.0091 4.36341C20.0731 4.33499 20.1423 4.32031 20.2122 4.32031H24C24.2761 4.32031 24.5 4.54417 24.5 4.82031V10.3203V13.3203H5.5V10.3203V4.82031Z"
         stroke="#9F0CFE"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
       <circle
         cx="9"
         cy="23.8203"
         r="4.5"
         stroke="#DEF043"
-        stroke-linecap="round"
+        strokeLinecap="round"
       ></circle>
       <circle
         cx="21"
         cy="23.8203"
         r="4.5"
         stroke="#DEF043"
-        stroke-linecap="round"
+        strokeLinecap="round"
       ></circle>
       <path
         d="M13.5 23.8203H16.5"
         stroke="#DEF043"
-        stroke-linecap="round"
+        strokeLinecap="round"
       ></path>
       <rect
         x="6"
@@ -155,8 +155,8 @@ function TPIcon4() {
         <path
           d="M11 17.0203L16.1429 9.82031V14.6203H20L14.8571 21.8203V17.0203H11Z"
           stroke="url(#paint0_linear_333_192)"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></path>
         <circle
           cx="20.5"
@@ -165,7 +165,7 @@ function TPIcon4() {
           fill="#DEF043"
           fill-opacity="0.15"
           stroke="#DEF043"
-          stroke-linecap="round"
+          strokeLinecap="round"
         ></circle>
         <circle
           cx="9.5"
@@ -179,14 +179,14 @@ function TPIcon4() {
         <path
           d="M15 3.82031H14.8048C8.37979 3.82031 3.22231 9.1569 3.40182 15.6193L3.40741 15.8203M3.40741 15.8203L1 13.0655M3.40741 15.8203L5.81481 13.0655"
           stroke="#DEF043"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></path>
         <path
           d="M15 27.8203H15.1952C21.6202 27.8203 26.7777 22.4837 26.5982 16.0214L26.5926 15.8203M26.5926 15.8203L29 18.5751M26.5926 15.8203L24.1852 18.5751"
           stroke="#9F0CFE"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></path>
       </g>
       <defs>
@@ -225,34 +225,34 @@ function TPIcon5() {
       <path
         d="M10 17.8203V21.8203C10 22.9249 9.10457 23.8203 8 23.8203H3C1.89543 23.8203 1 22.9249 1 21.8203V11.8203C1 10.7157 1.89543 9.82031 3 9.82031H8C9.10457 9.82031 10 10.7157 10 11.8203V12.8203"
         stroke="#9F0CFE"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
       <path
         d="M5 18.8203L9.39506 15.3043C9.75117 15.0194 10.2549 15.0115 10.6198 15.2851L11.3422 15.827C11.7244 16.1136 12.256 16.0899 12.6112 15.7703L16.3888 12.3704C16.744 12.0507 17.2756 12.027 17.6578 12.3137L20.3062 14.2999C20.7043 14.5985 21.2614 14.5589 21.6133 14.207L26 9.82031M26 9.82031H23M26 9.82031V12.8203"
         stroke="url(#paint0_linear_333_212)"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
       <path
         d="M13 12.8203V7.82031C13 7.26803 13.4477 6.82031 14 6.82031H28C28.5523 6.82031 29 7.26803 29 7.82031V18.8203C29 19.3726 28.5523 19.8203 28 19.8203H14C13.4477 19.8203 13 19.3726 13 18.8203V17.8203"
         stroke="#DEF043"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
       <path
         d="M3 21.3203H8"
         stroke="#9F0CFE"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
       <path
         d="M13 22.8203C13 22.268 13.4477 21.8203 14 21.8203H28C28.5523 21.8203 29 22.268 29 22.8203C29 23.3726 28.5523 23.8203 28 23.8203H14C13.4477 23.8203 13 23.3726 13 22.8203Z"
         fill="#DEF043"
         fill-opacity="0.15"
         stroke="#DEF043"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
       <defs>
         <linearGradient

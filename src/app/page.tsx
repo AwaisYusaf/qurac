@@ -1,4 +1,5 @@
 import AboutUs from "@/components/home/AboutUs";
+import FAQs from "@/components/home/FAQs";
 import Hero from "@/components/home/Hero";
 import HowItWorks from "@/components/home/HowItWorks";
 import HowToParticipate from "@/components/home/HowToParticipate";
@@ -16,6 +17,7 @@ export default function Home() {
       <Tokenomics />
       <HowItWorks />
       <Team />
+      <FAQs />
     </main>
   );
 }

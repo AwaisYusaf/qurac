@@ -64,7 +64,9 @@ function Header({}: Props) {
               FAQ
             </Link>
           </nav>
-          <Button variant="primary">Buy Tokens</Button>
+          <Button variant="primary" className="px-12 py-3">
+            Buy Tokens
+          </Button>
         </div>
       </SectionWrapper>
     </header>
