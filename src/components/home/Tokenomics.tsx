@@ -12,7 +12,7 @@ type Content = {
 
 function Card({ content }: { content: Content }) {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center lg:my-0 my-4">
       <h3 className="text-5xl text-white font-semibold">
         {content.percentage}
       </h3>
@@ -54,11 +54,12 @@ function Tokenomics({}: Props) {
           <h1 className="text-white font-semibold text-4xl text-center mt-8">
             Tokenomics Overview
           </h1>
-          <div className="flex items-center justify-evenly mt-12">
+          <div className="flex items-center justify-evenly mt-12 flex-wrap">
             {tokenomics.map((item, index) => (
               <Card key={index} content={item} />
             ))}
           </div>
+
           <div className="h-[1px] w-full bg-gray-400/10 my-8 max-w-6xl mx-auto" />
 
           <div className="grid grid-cols-2 justify-between">

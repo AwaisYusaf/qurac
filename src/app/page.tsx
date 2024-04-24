@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import AboutUs from "@/components/home/AboutUs";
 import FAQs from "@/components/home/FAQs";
 import Hero from "@/components/home/Hero";
@@ -6,6 +7,7 @@ import HowToParticipate from "@/components/home/HowToParticipate";
 import Team from "@/components/home/Team";
 import TokenPreSale from "@/components/home/TokenPreSale";
 import Tokenomics from "@/components/home/Tokenomics";
+import WhyChooseQurac from "@/components/home/WhyChooseQurac";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <HowItWorks />
       <Team />
       <FAQs />
+      <WhyChooseQurac />
+      <Footer />
     </main>
   );
 }

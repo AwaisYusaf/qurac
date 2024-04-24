@@ -100,19 +100,19 @@ function HowItWorks({}: Props) {
           A Peek Behind the Curtain
         </h2>
         <div className="flex flex-col divide-y-[1px] divide-gray-300/20">
-          <div className="grid grid-cols-3 py-8">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-8">
             {CARD_ITEMS.slice(0, 3).map((content, index) => (
               <Card content={content} key={index} />
             ))}
           </div>
 
-          <div className="grid grid-cols-3 py-8">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-8">
             {CARD_ITEMS.slice(3, 6).map((content, index) => (
               <Card content={content} key={index} />
             ))}
           </div>
 
-          <div className="grid grid-cols-3 py-8">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-8">
             {CARD_ITEMS.slice(6, 9).map((content, index) => (
               <Card content={content} key={index} />
             ))}

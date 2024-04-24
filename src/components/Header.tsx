@@ -29,37 +29,37 @@ function Header({}: Props) {
           <nav className="flex items-center space-x-6">
             <Link
               className="text-white hover:text-yellow-200/100 transition-all duration-200"
-              href="/presale"
+              href="#token-presale"
             >
               Token Presale
             </Link>
             <Link
               className="text-white hover:text-yellow-200/100 transition-all duration-200"
-              href="/about"
+              href="#about-us"
             >
               About Us
             </Link>
             <Link
               className="text-white hover:text-yellow-200/100 transition-all duration-200"
-              href="/tokenomics"
+              href="#tokenomics"
             >
               Tokenomics
             </Link>
             <Link
               className="text-white hover:text-yellow-200/100 transition-all duration-200"
-              href="/how-it-works"
+              href="#how-it-works"
             >
               How It Works
             </Link>
             <Link
               className="text-white hover:text-yellow-200/100 transition-all duration-200"
-              href="/team"
+              href="#the-team"
             >
               The Team
             </Link>
             <Link
               className="text-white hover:text-yellow-200/100 transition-all duration-200"
-              href="/faq"
+              href="#faq"
             >
               FAQ
             </Link>
