@@ -25,7 +25,7 @@ function HowToParticipate({}: Props) {
         <h2 className="text-white text-center text-4xl font-semibold mt-8 mb-12">
           How to Participate?
         </h2>
-        <div className="grid grid-cols-4 gap-12 px-16">
+        <div className="grid lg:grid-cols-4 grid-cols-1 gap-12 lg:px-16 px-4">
           <div className="flex flex-col items-center space-y-5">
             <Image
               src="/assets/htp-icon1.png"

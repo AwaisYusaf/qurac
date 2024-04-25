@@ -62,7 +62,7 @@ function Tokenomics({}: Props) {
 
           <div className="h-[1px] w-full bg-gray-400/10 my-8 max-w-6xl mx-auto" />
 
-          <div className="grid grid-cols-2 justify-between">
+          <div className="grid lg:grid-cols-2 grid-cols-1 justify-between">
             <div className="flex justify-center items-center">
               <Image
                 src="/assets/pie-chart.png"
@@ -72,7 +72,7 @@ function Tokenomics({}: Props) {
               />
             </div>
             <div className="flex justify-center items-center">
-              <div className="min-w-[400px] flex flex-col space-y-4">
+              <div className="min-w-[400px] flex flex-col space-y-4 lg:px-0 px-3 lg:mt-0 mt-6">
                 <h2 className="text-white text-2xl font-semibold">
                   Token Distribution
                 </h2>
