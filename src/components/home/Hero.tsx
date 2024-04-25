@@ -10,31 +10,39 @@ function Timer() {
   return (
     <div className="flex justify-evenly">
       <div className=" flex flex-col items-center space-y-2">
-        <p className="px-2 py-4 bg-white/5 font-medium text-4xl text-white rounded-xl">
+        <p className="px-2 py-4 bg-white/5 font-medium lg:text-4xl text-2xl text-white rounded-xl">
           38
         </p>
-        <span className="text-white/60 font-medium">Days</span>
+        <span className="text-white/60 font-medium lg:text-base text-xs">
+          Days
+        </span>
       </div>
-      <p className="text-white text-4xl font-bold mt-2">:</p>
+      <p className="text-white lg:text-4xl text-2xl font-bold mt-2">:</p>
       <div className=" flex flex-col items-center space-y-2">
-        <p className="px-2 py-4 bg-white/5 font-medium text-4xl text-white rounded-xl">
+        <p className="px-2 py-4 bg-white/5 font-medium lg:text-4xl text-2xl text-white rounded-xl">
           22
         </p>
-        <span className="text-white/60 font-medium">Hours</span>
+        <span className="text-white/60 font-medium lg:text-base text-xs">
+          Hours
+        </span>
       </div>
-      <p className="text-white text-4xl font-bold mt-2">:</p>
+      <p className="text-white lg:text-4xl text-2xl font-bold mt-2">:</p>
       <div className=" flex flex-col items-center space-y-2">
-        <p className="px-2 py-4 bg-white/5 font-medium text-4xl text-white rounded-xl">
+        <p className="px-2 py-4 bg-white/5 font-medium lg:text-4xl text-2xl text-white rounded-xl">
           07
         </p>
-        <span className="text-white/60 font-medium">Minutes</span>
+        <span className="text-white/60 font-medium lg:text-base text-xs">
+          Minutes
+        </span>
       </div>
-      <p className="text-white text-4xl font-bold mt-2">:</p>
+      <p className="text-white lg:text-4xl text-2xl font-bold mt-2">:</p>
       <div className=" flex flex-col items-center space-y-2">
-        <p className="px-2 py-4 bg-white/5 font-medium text-4xl text-white rounded-xl">
+        <p className="px-2 py-4 bg-white/5 font-medium lg:text-4xl text-2xl text-white rounded-xl">
           20
         </p>
-        <span className="text-white/60 font-medium">Seconds</span>
+        <span className="text-white/60 font-medium lg:text-base text-xs">
+          Seconds
+        </span>
       </div>
     </div>
   );
@@ -42,14 +50,14 @@ function Timer() {
 
 function TokenPresalePanel() {
   return (
-    <div className="bg-[url(/assets/hero-panel-bg.jpg)] h-fit bg-no-repeat bg-center bg-cover p-10 rounded-3xl flex flex-col space-y-8 mx-8">
-      <h1 className="text-white text-4xl font-medium text-center">
+    <div className="bg-[url(/assets/hero-panel-bg.jpg)] h-fit bg-no-repeat bg-center bg-cover lg:p-10 p-5 rounded-3xl flex flex-col space-y-8 lg:mx-8 mx-0 lg:mt-0 mt-6">
+      <h1 className="text-white lg:text-4xl text-3xl font-medium text-center">
         Token Presale is Live! $0.10 Tokens End In:
       </h1>
       <Timer />
       <Button
         variant="primary"
-        className="w-fit px-12 py-4 bg-[#D7F024] text-black hover:bg-white hover:text-black mx-auto"
+        className="w-fit lg:px-12 px-6 lg:py-4 py-2 lg:text-base text-sm bg-[#D7F024] text-black hover:bg-white hover:text-black mx-auto"
       >
         Buy Tokens Now
       </Button>
@@ -108,7 +116,7 @@ function TokenPresalePanel() {
           </div>
         </div>
         <div className="mt-4">
-          <p className="text-white/50 text-sm text-center leading-6">
+          <p className="text-white/50 lg:text-sm text-xs text-center leading-6">
             Diverse Payment Options: We accept major cryptocurrencies (BTC, ETH,
             USDT, USDC) for seamless transactions.
             <br />
@@ -134,12 +142,12 @@ function Hero({}: Props) {
       </div>
       <Header />
       <SectionWrapper>
-        <main className="z-20 grid grid-cols-2 py-8 px-5 gap-x-28">
+        <main className="z-20 grid lg:grid-cols-2 grid-cols-1 py-8 px-5 gap-x-28">
           <div className="flex flex-col space-y-8">
             <h1 className="text-[#B5C2FF] font-bold text-4xl">
               Welcome to QURAC
             </h1>
-            <h2 className="text-xl text-white font-semibold">
+            <h2 className="text-2xl text-[#F5D1FF] font-semibold">
               Empowering Connectivity for a Decentralized Tomorrow!
             </h2>
             <p className="text-lg text-[#FFFFFF99]">
@@ -158,19 +166,19 @@ function Hero({}: Props) {
             </p>
             <Button
               variant="primary"
-              className="bg-[#BB04FF] hover:bg-white text-white hover:text-[#1C0A27] font-medium capitalize w-fit px-16 py-4 transition-all duration-200"
+              className="bg-[#BB04FF] hover:bg-white text-white hover:text-[#1C0A27] font-medium capitalize w-fit px-16 py-4 transition-all duration-200 lg:mx-0 mx-auto"
             >
               How It Works
             </Button>
-            <h2 className="text-xl text-white font-semibold">
+            <h2 className="lg:text-xl text-3xl lg:text-start text-center text-[#F5D1FF] font-semibold">
               Why Participate in Our Presale?
             </h2>
-            <p className="text-lg text-[#FFFFFF99]">
+            <p className="text-lg text-[#FFFFFF99] lg:text-start text-center">
               Exclusive Pricing: Acquire QURAC tokens at a special presale price
               of $0.10 per token – a limited-time offer available only during
               this presale stage.
             </p>
-            <p className="text-lg text-[#FFFFFF99]">
+            <p className="text-lg text-[#FFFFFF99] lg:text-start text-center">
               Token Burning Mechanism: We are committed to token value
               appreciation. If any, unsold tokens at the end of the presale will
               be permanently burned, reducing the total supply.

@@ -9,8 +9,8 @@ function TokenPreSale({}: Props) {
   return (
     <section className="w-full">
       <SectionWrapper>
-        <div className="grid grid-cols-2 mt-12">
-          <div className="flex items-center ml-10">
+        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-y-0 gap-y-10 mt-12">
+          <div className="flex items-center lg:ml-10 lg:mx-0 mx-auto">
             <Image
               src="/assets/featured-img.png"
               alt="-"
@@ -19,7 +19,7 @@ function TokenPreSale({}: Props) {
               className="w-auto h-auto"
             />
           </div>
-          <div className="flex flex-col space-y-6 justify-center">
+          <div className="flex flex-col space-y-6 justify-center lg:px-0 px-2">
             <h2 className="text-[#B5C2FF] font-bold text-4xl">Token Presale</h2>
             <div className="flex items-center space-x-6">
               <TPIcon1 />
