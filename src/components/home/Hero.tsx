@@ -1,17 +1,22 @@
+"use client";
 import React from "react";
 import Header from "../Header";
 import Image from "next/image";
 import SectionWrapper from "./SectionWrapper";
 import Button from "../Button";
+import Countdown from "react-countdown";
 
 type Props = {};
 
-function Timer() {
+function PresaleCountdown({ days, hours, minutes, seconds, completed }: any) {
+  if (completed) {
+    return <h1 className="text-white">Done</h1>;
+  }
   return (
     <div className="flex justify-evenly">
       <div className=" flex flex-col items-center space-y-2">
         <p className="px-2 py-4 bg-white/5 font-medium lg:text-4xl text-2xl text-white rounded-xl">
-          38
+          {days}
         </p>
         <span className="text-white/60 font-medium lg:text-base text-xs">
           Days
@@ -20,7 +25,7 @@ function Timer() {
       <p className="text-white lg:text-4xl text-2xl font-bold mt-2">:</p>
       <div className=" flex flex-col items-center space-y-2">
         <p className="px-2 py-4 bg-white/5 font-medium lg:text-4xl text-2xl text-white rounded-xl">
-          22
+          {hours}
         </p>
         <span className="text-white/60 font-medium lg:text-base text-xs">
           Hours
@@ -29,7 +34,7 @@ function Timer() {
       <p className="text-white lg:text-4xl text-2xl font-bold mt-2">:</p>
       <div className=" flex flex-col items-center space-y-2">
         <p className="px-2 py-4 bg-white/5 font-medium lg:text-4xl text-2xl text-white rounded-xl">
-          07
+          {minutes}
         </p>
         <span className="text-white/60 font-medium lg:text-base text-xs">
           Minutes
@@ -38,7 +43,7 @@ function Timer() {
       <p className="text-white lg:text-4xl text-2xl font-bold mt-2">:</p>
       <div className=" flex flex-col items-center space-y-2">
         <p className="px-2 py-4 bg-white/5 font-medium lg:text-4xl text-2xl text-white rounded-xl">
-          20
+          {seconds}
         </p>
         <span className="text-white/60 font-medium lg:text-base text-xs">
           Seconds
@@ -49,12 +54,15 @@ function Timer() {
 }
 
 function TokenPresalePanel() {
+  const presaleStart = new Date("2024-5-25").getTime();
+
   return (
     <div className="bg-[url(/assets/hero-panel-bg.jpg)] h-fit bg-no-repeat bg-center bg-cover lg:p-10 p-5 rounded-3xl flex flex-col space-y-8 lg:mx-8 mx-0 lg:mt-0 mt-6">
       <h1 className="text-white lg:text-4xl text-3xl font-medium text-center">
         Token Presale is Live! $0.10 Tokens End In:
       </h1>
-      <Timer />
+      {/* <PresaleCountdown /> */}
+      <Countdown date={presaleStart} renderer={PresaleCountdown} />,
       <Button
         variant="primary"
         className="w-fit lg:px-12 px-6 lg:py-4 py-2 lg:text-base text-sm bg-[#D7F024] text-black hover:bg-white hover:text-black mx-auto"
