@@ -141,18 +141,22 @@ function FAQs({}: Props) {
           </h2>
 
           <div className="max-w-6xl mx-auto mt-12 flex flex-col">
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion
+              type="single"
+              collapsible
+              className="w-full bg-[#1C0A27]"
+            >
               {FAQS_DATA.map((faq, index) => {
                 return (
                   <AccordionItem
-                    className="border-b-2 border-gray-600/20 py-3"
+                    className="border-b-2 border-gray-600/20 py-3 bg-[#1C0A27]"
                     key={index}
                     value={faq.question}
                   >
-                    <AccordionTrigger className="text-white text-xl lg:text-center text-start border-none divide-y-0 hover:no-underline">
+                    <AccordionTrigger className="text-white text-xl lg:text-center text-start border-none divide-y-0 hover:no-underline bg-[#1C0A27]">
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-white/70 text-lg">
+                    <AccordionContent className="text-white/70 text-lg bg-[#1C0A27]">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>

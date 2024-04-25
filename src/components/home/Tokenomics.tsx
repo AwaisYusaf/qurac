@@ -72,7 +72,7 @@ function Tokenomics({}: Props) {
               />
             </div>
             <div className="flex justify-center items-center">
-              <div className="min-w-[400px] flex flex-col space-y-4 lg:px-0 px-3 lg:mt-0 mt-6">
+              <div className="lg:min-w-[400px] min-w-max flex flex-col space-y-4 lg:px-0 px-3 lg:mt-0 mt-6">
                 <h2 className="text-white text-2xl font-semibold">
                   Token Distribution
                 </h2>
