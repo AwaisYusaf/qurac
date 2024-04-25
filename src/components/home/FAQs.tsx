@@ -136,7 +136,7 @@ function FAQs({}: Props) {
       />
       <div className="-mt-40">
         <SectionWrapper>
-          <h2 className="text-white font-semibold text-3xl text-center">
+          <h2 className="text-white font-semibold text-3xl text-center lg:mt-0 mt-10">
             Frequently Asked Questions
           </h2>
 
@@ -149,7 +149,7 @@ function FAQs({}: Props) {
                     key={index}
                     value={faq.question}
                   >
-                    <AccordionTrigger className="text-white text-xl border-none divide-y-0 hover:no-underline">
+                    <AccordionTrigger className="text-white text-xl lg:text-center text-start border-none divide-y-0 hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-white/70 text-lg">
@@ -161,7 +161,7 @@ function FAQs({}: Props) {
             </Accordion>
             <Button
               variant="primary"
-              className=" px-12 py-4 my-24 bg-[#D7F024] text-black hover:bg-white hover:text-black mx-auto"
+              className=" px-12 py-4 lg:my-24 my-12 bg-[#D7F024] text-black hover:bg-white hover:text-black mx-auto"
             >
               Buy Tokens Now
             </Button>

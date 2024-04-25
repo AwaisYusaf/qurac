@@ -25,7 +25,7 @@ function TeamMemberCard({ member }: { member: TeamMember }) {
       <h3 className="text-[#D7F024] uppercase leading-7 mt-2 text-center">
         {member.role}
       </h3>
-      <p className="text-center text-white leading-7 text-sm mt-4 w-[90%] mx-auto">
+      <p className="text-center text-white leading-7 text-sm mt-4 lg:w-[90%] mx-auto">
         {member.description}
       </p>
     </div>
@@ -87,7 +87,7 @@ function Team({}: Props) {
         <p className="text-white font-medium text-2xl text-center mt-4 mb-12">
           Meet the Visionaries
         </p>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12 px-8">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12 lg:px-8 px-2">
           {TEAM_DATA.map((team_member, index) => (
             <TeamMemberCard key={index} member={team_member} />
           ))}

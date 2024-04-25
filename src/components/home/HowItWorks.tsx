@@ -26,10 +26,10 @@ function Card({
   content: CardProps;
 }) {
   return (
-    <div className="flex flex-col items-center space-y-4">
+    <div className="flex flex-col items-center lg:space-y-4 space-y-2">
       {icon}
       <p className="text-white text-center font-semibold text-lg">{title}</p>
-      <span className="text-center text-white/70 leading-8 w-[80%] mx-auto">
+      <span className="text-center text-white/70 lg:leading-8 leading-7 lg:w-[80%] w-[90%] mx-auto">
         {description}
       </span>
     </div>
@@ -100,19 +100,19 @@ function HowItWorks({}: Props) {
           A Peek Behind the Curtain
         </h2>
         <div className="flex flex-col divide-y-[1px] divide-gray-300/20">
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-8">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-8 lg:gap-y-0 gap-y-10">
             {CARD_ITEMS.slice(0, 3).map((content, index) => (
               <Card content={content} key={index} />
             ))}
           </div>
 
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-8">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-8 lg:gap-y-0 gap-y-10">
             {CARD_ITEMS.slice(3, 6).map((content, index) => (
               <Card content={content} key={index} />
             ))}
           </div>
 
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-8">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-8 lg:gap-y-0 gap-y-10">
             {CARD_ITEMS.slice(6, 9).map((content, index) => (
               <Card content={content} key={index} />
             ))}
