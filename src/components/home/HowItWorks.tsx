@@ -86,7 +86,10 @@ const CARD_ITEMS: CardProps[] = [
 
 function HowItWorks({}: Props) {
   return (
-    <section className="w-full py-12 bg-[url(/assets/tokenomics-bg2.png)] bg-no-repeat bg-center bg-cover">
+    <section
+      id="how-it-works"
+      className="w-full py-12 bg-[url(/assets/tokenomics-bg2.png)] bg-no-repeat bg-center bg-cover"
+    >
       <SectionWrapper>
         <h1 className="text-white font-bold text-4xl text-center">
           How It Works

@@ -48,7 +48,10 @@ function Tokenomics({}: Props) {
     },
   ];
   return (
-    <section className="w-full py-12 bg-[url(/assets/tokenomics-bg2.png)] bg-no-repeat bg-center bg-cover">
+    <section
+      id="tokenomics"
+      className="w-full py-12 bg-[url(/assets/tokenomics-bg2.png)] bg-no-repeat bg-center bg-cover"
+    >
       <SectionWrapper>
         <div className="flex flex-col">
           <h1 className="text-white font-semibold text-4xl text-center mt-8">
