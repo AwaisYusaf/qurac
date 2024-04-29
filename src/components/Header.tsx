@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -5,13 +6,6 @@ import Button from "./Button";
 import SectionWrapper from "./home/SectionWrapper";
 
 type Props = {};
-// Nav links:
-// Token Presale
-// About Us
-// Tokenomics
-// How It Works
-// The Team
-// FAQ
 
 function MobileLogo() {
   return (
@@ -76,12 +70,39 @@ function MobileLogo() {
   );
 }
 
-// #1C0A27
-function Header({}: Props) {
+function MenuIcon() {
   return (
-    <header className="w-full bg-transparent z-10">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="#ffffff"
+      className="w-auto h-8"
+    >
+      <path
+        fillRule="evenodd"
+        d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+}
+
+function Header({}: Props) {
+  const [isBurgerNavOpen, setIsBurgerNavOpen] = React.useState(false);
+
+  function closeMenu() {
+    setIsBurgerNavOpen(false);
+  }
+  function openMenu() {
+    setIsBurgerNavOpen(true);
+  }
+
+  return (
+    <header
+      className={`w-full bg-transparent ${isBurgerNavOpen ? "z-40" : "z-40"}`}
+    >
       <SectionWrapper>
-        <div className="flex items-center justify-between lg:py-0 py-3 lg:px-0 px-3">
+        <div className="relative flex items-center justify-between lg:py-0 py-3 lg:px-0 px-3">
           <Image
             className="h-28 w-auto lg:flex hidden"
             src="/assets/logo.png"
@@ -95,7 +116,7 @@ function Header({}: Props) {
             className="md:h-16 h-14 w-auto lg:hidden flex"
           />
 
-          <nav className="flex items-center space-x-6 lg:flex hidden">
+          <nav className="items-center space-x-6 lg:flex hidden">
             <Link
               className="text-white hover:text-yellow-200/100 transition-all duration-200"
               href="#token-presale"
@@ -136,6 +157,74 @@ function Header({}: Props) {
           <Button variant="primary" className="px-12 py-3 lg:flex hidden">
             Buy Tokens
           </Button>
+          <button className="lg:hidden block" onClick={openMenu}>
+            <MenuIcon />
+          </button>
+          <div
+            className={`absolute bg-white px-6 w-80 right-0 h-screen top-0 z-40 transition-all duration-300 ${
+              isBurgerNavOpen ? "translate-x-4" : "translate-x-96"
+            }`}
+          >
+            <button className="mt-6 w-full " onClick={closeMenu}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1}
+                stroke="currentColor"
+                className="w-8 h-auto"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </button>
+            <nav className="flex flex-col divide-y-[1px] divide-gray-200">
+              <Link
+                className="py-4 text-sm text-black/90"
+                href="#token-presale"
+              >
+                Token Presale
+              </Link>
+              <Link
+                className="py-4 text-sm text-black/90"
+                onClick={closeMenu}
+                href="#about-us"
+              >
+                About Us
+              </Link>
+              <Link
+                className="py-4 text-sm text-black/90"
+                onClick={closeMenu}
+                href="#tokenomics"
+              >
+                Tokenomics
+              </Link>
+              <Link
+                className="py-4 text-sm text-black/90"
+                onClick={closeMenu}
+                href="#how-it-works"
+              >
+                How It Works
+              </Link>
+              <Link
+                className="py-4 text-sm text-black/90"
+                onClick={closeMenu}
+                href="#the-team"
+              >
+                The Team
+              </Link>
+              <Link
+                className="py-4 text-sm text-black/90"
+                onClick={closeMenu}
+                href="#faq"
+              >
+                FAQ
+              </Link>
+            </nav>
+          </div>
         </div>
       </SectionWrapper>
     </header>
